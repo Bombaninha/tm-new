@@ -110,6 +110,24 @@ input {
 	width: 100%;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-airplane {
+    position: absolute;
+    right: -450px;
+    bottom: -90px;
+    opacity: .7; 
+    width: 900px;
+}
+
+.overlay-airplane:hover {
+    transition: 1s ease-in-out;
+    transform: scale(0.95); 
+}
+
 .plane-login {
     color: var(--primary-color);
 }
@@ -155,7 +173,7 @@ input {
 	background-position: 0 0;
 	color: #FFFFFF;
 	height: 100%;
-	width: 200%;
+    position: relative;
 }
 
 .overlay-panel {
@@ -166,11 +184,6 @@ input {
 	padding: 0 40px;
 	text-align: center;
 	height: 100%;
-	width: 50%;
-}
-
-.overlay-right {
-	right: 0;
 }
 
 @media only screen and (max-width: 500px) {
