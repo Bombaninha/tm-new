@@ -119,7 +119,7 @@ input {
     position: absolute;
     right: -450px;
     bottom: -90px;
-    opacity: .7; 
+    opacity: .3; 
     width: 900px;
 }
 
@@ -181,9 +181,17 @@ input {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 40px;
 	text-align: center;
 	height: 100%;
+    padding: 1rem;
+}
+
+
+
+@media only screen and (max-width: 415px) {
+    .overlay-panel {
+        font-size: 0.75rem;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -198,11 +206,23 @@ input {
     }
 
     .sign-in-container {
-        flex: 7;
+        flex: 6;
     }
 
     .overlay-container {
-        flex: 3;
+        flex: 4;
         order: -1;
+    }
+
+    form {
+        justify-content: start;
+        padding: 5rem 50px;
+    }
+
+    .overlay-airplane {
+        right: -450px;
+        bottom: -140px;
+        opacity: .3;
+        width: 900px;
     }
 }
